@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import '@fontsource/roboto';
 
-import { App } from './App';
+import { HerosApp } from './HerosApp';
 
 import './index.css';
 
 ReactDOM.render(
-    <App />,
+    <HerosApp />,
     document.getElementById('root')
 );
