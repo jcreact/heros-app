@@ -1,10 +1,16 @@
 import React from 'react';
-import { Typography } from '@material-ui/core';
+import { Box, Divider, Typography } from '@material-ui/core';
+
+import { HeroList } from '../heros/HeroList';
 
 export const MarvelPage = () => {
     return (
-        <>
-            <Typography variant="h1">Marvel</Typography>
-        </>
+        <Box mt={1}>
+            <Typography variant="h3">Marvel</Typography>
+            <Box mt={1} mb={2}>
+                <Divider />
+            </Box>
+            <HeroList publisher="Marvel Comics" />
+        </Box>
     );
 };
