@@ -12,7 +12,7 @@ export const HeroList = ({ publisher }) => {
         <Fade in timeout={500}>
             <Grid container spacing={2}>
                 {heros.map((hero) => (
-                    <Grid item xs={12} sm={6} md={4} key={hero.id}>
+                    <Grid item xs={12} sm={4} md={3} key={hero.id}>
                         <HeroListItem {...hero} />
                     </Grid>
                 ))}
