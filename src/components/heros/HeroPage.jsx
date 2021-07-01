@@ -100,7 +100,7 @@ export const HeroPage = ({ history }) => {
                     <Grid item xs={12} sm={6}>
                         <Card variant="outlined">
                             <CardMedia
-                                image={`./assets/heros/${id}.jpg`}
+                                image={`../assets/heros/${id}.jpg`}
                                 component="img"
                             />
                         </Card>
