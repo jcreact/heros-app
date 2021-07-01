@@ -69,7 +69,7 @@ export const HeroListItem = ({
                     subheader={alter_ego}
                 />
                 <CardMedia
-                    image={`./assets/heros/${id}.jpg`}
+                    image={`../../assets/heros/${id}.jpg`}
                     title={superhero}
                     component="img"
                 />
