@@ -28,7 +28,8 @@ const useStyles = makeStyles((theme) => ({
 export const HeroPage = ({ history }) => {
     const { chips } = useStyles();
     const { id } = useParams();
-    const hero = getHeroById(id);
+
+    const hero = useMemo(() => getHeroById(id), [id]);
 
     const theme = useMemo(() => {
         if (!hero) {

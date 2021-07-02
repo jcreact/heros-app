@@ -4,9 +4,11 @@ import { Grid, Fade } from '@material-ui/core';
 import { HeroListItem } from './HeroListItem';
 
 import { getHerosByPublisher } from '../../selectors/getHerosByPublisher';
+import { useMemo } from 'react';
 
 export const HeroList = ({ publisher }) => {
-    const heros = getHerosByPublisher(publisher);
+    // const heros = getHerosByPublisher(publisher);
+    const heros = useMemo(() => getHerosByPublisher(publisher), [publisher]);
 
     return (
         <Fade in timeout={500}>
