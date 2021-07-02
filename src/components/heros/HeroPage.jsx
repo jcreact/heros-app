@@ -82,7 +82,6 @@ export const HeroPage = ({ history }) => {
     const handleClick = (_) => {
         if (history.length <= 2) {
             const back = `/${publisher.startsWith('DC') ? 'dc' : 'marvel'}`;
-            console.log(back);
             history.push(back);
         } else {
             history.goBack();

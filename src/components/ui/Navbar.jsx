@@ -52,6 +52,14 @@ export const Navbar = () => {
                         >
                             DC
                         </Button>
+                        <Button
+                            component={NavLink}
+                            to="/search"
+                            color="inherit"
+                            activeClassName={classes.active}
+                        >
+                            buscar
+                        </Button>
                     </div>
 
                     <IconButton
