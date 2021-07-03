@@ -36,6 +36,7 @@ const useStyles = makeStyles((theme) => ({
 export const LoginPage = ({ history }) => {
     const classes = useStyles();
     const { dispatch } = useContext(AuthContext);
+    const lastPath = localStorage.getItem('lastPath') || '/';
 
     const handleSubmit = (evt) => {
         evt.preventDefault();
@@ -46,7 +47,7 @@ export const LoginPage = ({ history }) => {
                 logged: true,
             },
         });
-        history.replace('/');
+        history.replace(lastPath);
     };
 
     return (
