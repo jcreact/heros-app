@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import {
     Card,
@@ -13,6 +13,8 @@ import {
 } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/core/styles';
 import { darkTheme } from '../../theme/themes';
+import { AuthContext } from '../../auth/AuthContext';
+import { types } from '../../types/types';
 
 const useStyles = makeStyles((theme) => ({
     main: {
@@ -33,9 +35,17 @@ const useStyles = makeStyles((theme) => ({
 
 export const LoginPage = ({ history }) => {
     const classes = useStyles();
+    const { dispatch } = useContext(AuthContext);
 
     const handleSubmit = (evt) => {
         evt.preventDefault();
+        dispatch({
+            type: types.login,
+            payload: {
+                name: 'José Palma',
+                logged: true,
+            },
+        });
         history.replace('/');
     };
 
@@ -61,7 +71,7 @@ export const LoginPage = ({ history }) => {
                                     label="Usuario"
                                     autoFocus
                                     autoComplete="off"
-                                    value="test"
+                                    value="jcpalma"
                                 />
                             </FormControl>
                             {/* <FormControl fullWidth className={classes.field}>

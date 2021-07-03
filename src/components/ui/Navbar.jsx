@@ -1,5 +1,5 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { NavLink, useHistory } from 'react-router-dom';
 import {
     Typography,
     AppBar,
@@ -10,6 +10,9 @@ import {
 } from '@material-ui/core';
 import { ExitToApp } from '@material-ui/icons';
 import gray from '@material-ui/core/colors/grey';
+
+import { AuthContext } from '../../auth/AuthContext';
+import { types } from '../../types/types';
 
 const useStyles = makeStyles((theme) => ({
     offset: theme.mixins.toolbar,
@@ -28,6 +31,19 @@ const useStyles = makeStyles((theme) => ({
 
 export const Navbar = () => {
     const classes = useStyles();
+    const {
+        user: { name },
+        dispatch,
+    } = useContext(AuthContext);
+
+    const history = useHistory();
+
+    const handleLogout = () => {
+        dispatch({
+            type: types.logout,
+        });
+        history.replace('/login');
+    };
 
     return (
         <>
@@ -62,12 +78,11 @@ export const Navbar = () => {
                         </Button>
                     </div>
 
-                    <IconButton
-                        component={NavLink}
-                        to="/login"
-                        color="inherit"
-                        variant="contained"
-                    >
+                    <Typography variant="subtitle2" color="inherit">
+                        {name}
+                    </Typography>
+
+                    <IconButton color="secondary" onClick={handleLogout}>
                         <ExitToApp />
                     </IconButton>
                 </Toolbar>
