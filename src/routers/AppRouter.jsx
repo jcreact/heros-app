@@ -11,8 +11,16 @@ import { LoginPage } from '../components/login/LoginPage';
 export const AppRouter = () => {
     const { user } = useContext(AuthContext);
 
+    console.log(process.env.NODE_ENV);
+
     return (
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router
+            basename={
+                process.env.NODE_ENV === 'development'
+                    ? ''
+                    : process.env.PUBLIC_URL
+            }
+        >
             <div>
                 <Switch>
                     <PublicRoute
