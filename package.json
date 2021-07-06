@@ -20,7 +20,7 @@
         "start": "FAST_REFRESH=false react-scripts start",
         "build": "react-scripts build",
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d build --branch main --dest docs",
+        "deploy": "gh-pages -d build --branch pages && rm -rf build",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },
