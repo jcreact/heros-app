@@ -15,6 +15,7 @@ import { ThemeProvider } from '@material-ui/core/styles';
 import { darkTheme } from '../../theme/themes';
 import { AuthContext } from '../../auth/AuthContext';
 import { types } from '../../types/types';
+import { getLoginImage } from '../../helpers/loadImages';
 
 const useStyles = makeStyles((theme) => ({
     main: {
@@ -64,7 +65,7 @@ export const LoginPage = ({ history }) => {
                     <Card className={classes.card} variant="outlined">
                         <CardMedia
                             className={classes.media}
-                            image="./assets/login.png"
+                            image={getLoginImage()}
                         />
                         <CardContent>
                             <FormControl fullWidth className={classes.field}>

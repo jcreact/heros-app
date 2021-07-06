@@ -13,6 +13,7 @@ import {
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { MoreVert as MoreVertIcon } from '@material-ui/icons';
+import { getHeroImage } from '../../helpers/loadImages';
 
 const useStyles = makeStyles((theme) => ({
     avatarMarvel: {
@@ -69,7 +70,7 @@ export const HeroListItem = ({
                     subheader={alter_ego}
                 />
                 <CardMedia
-                    image={`../../assets/heros/${id}.jpg`}
+                    image={getHeroImage(`${id}.jpg`)}
                     title={superhero}
                     component="img"
                 />

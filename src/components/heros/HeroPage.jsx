@@ -16,8 +16,8 @@ import {
     Typography,
 } from '@material-ui/core';
 import { ArrowBackIos } from '@material-ui/icons';
-
 import { getHeroById } from '../../selectors/getHeroById';
+import { getHeroImage } from '../../helpers/loadImages';
 
 const useStyles = makeStyles((theme) => ({
     chips: {
@@ -100,7 +100,7 @@ export const HeroPage = ({ history }) => {
                     <Grid item xs={12} sm={6}>
                         <Card variant="outlined">
                             <CardMedia
-                                image={`../../assets/heros/${id}.jpg`}
+                                image={getHeroImage(`${id}.jpg`)}
                                 component="img"
                             />
                         </Card>
