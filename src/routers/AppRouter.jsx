@@ -11,8 +11,6 @@ import { LoginPage } from '../components/login/LoginPage';
 export const AppRouter = () => {
     const { user } = useContext(AuthContext);
 
-    console.log(process.env.NODE_ENV);
-
     return (
         <Router
             basename={
