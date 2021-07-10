@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente 'LoginPage.jsx'. Debe renderizar el componente correctamente. 1`] = `
+Array [
+  "",
+  <div
+    className="MuiGrid-root makeStyles-main-1 MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <div
+        className="MuiPaper-root MuiCard-root makeStyles-card-2 MuiPaper-outlined MuiPaper-rounded"
+      >
+        <div
+          className="MuiCardMedia-root makeStyles-media-3"
+          style={
+            Object {
+              "backgroundImage": "url(\\".\\")",
+            }
+          }
+        />
+        <div
+          className="MuiCardContent-root"
+        >
+          <div
+            className="MuiFormControl-root makeStyles-field-4 MuiFormControl-fullWidth"
+          >
+            <div
+              className="MuiFormControl-root MuiTextField-root"
+            >
+              <label
+                className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiFormLabel-filled"
+                data-shrink={true}
+              >
+                Usuario
+              </label>
+              <div
+                className="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+                onClick={[Function]}
+              >
+                <input
+                  aria-invalid={false}
+                  autoComplete="off"
+                  autoFocus={true}
+                  className="MuiInputBase-input MuiInput-input"
+                  disabled={false}
+                  onAnimationStart={[Function]}
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  required={false}
+                  type="text"
+                  value="jcpalma"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root MuiBox-root-5"
+        >
+          <button
+            className="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary"
+            disabled={false}
+            onBlur={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={0}
+            type="submit"
+          >
+            <span
+              className="MuiButton-label"
+            >
+              Ingresar
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>,
+]
+`;

@@ -1,0 +1,185 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente 'HeroPage.jsx'. Debe llamar el Redirect si el id no existe. 1`] = `""`;
+
+exports[`Pruebas en el componente 'HeroPage.jsx'. Debe mostrar a Superman. 1`] = `
+<div
+  className="MuiBox-root MuiBox-root-2"
+  style={
+    Object {
+      "opacity": 1,
+      "visibility": undefined,
+    }
+  }
+>
+  <div
+    className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2"
+    style={
+      Object {
+        "maxWidth": "110vh",
+      }
+    }
+  >
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6"
+    >
+      <div
+        className="MuiPaper-root MuiCard-root MuiPaper-outlined MuiPaper-rounded"
+      >
+        <img
+          className="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img"
+          src="."
+        />
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6"
+    >
+      <div
+        className="MuiBox-root MuiBox-root-3"
+        style={
+          Object {
+            "height": "100%",
+          }
+        }
+      >
+        <h2
+          className="MuiTypography-root MuiTypography-h2"
+        >
+          <span>
+            Superman
+          </span>
+          <div
+            className="MuiChip-root MuiBox-root MuiBox-root-4 MuiChip-colorPrimary MuiChip-outlined MuiChip-outlinedPrimary MuiChip-sizeSmall"
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+          >
+            <span
+              className="MuiChip-label MuiChip-labelSmall"
+            >
+              DC Comics
+            </span>
+          </div>
+        </h2>
+        <div
+          className="MuiBox-root MuiBox-root-5"
+        >
+          <hr
+            className="MuiDivider-root"
+          />
+        </div>
+        <div
+          className="MuiBox-root MuiBox-root-6"
+        >
+          <h5
+            className="MuiTypography-root MuiTypography-h5"
+          >
+            <b
+              style={
+                Object {
+                  "textTransform": "capitalize",
+                }
+              }
+            >
+              Alter ego:
+               
+            </b>
+            Kal-El
+          </h5>
+        </div>
+        <div
+          className="MuiBox-root MuiBox-root-7"
+        >
+          <h5
+            className="MuiTypography-root MuiTypography-h5"
+          >
+            <b
+              style={
+                Object {
+                  "textTransform": "capitalize",
+                }
+              }
+            >
+              First Appearance:
+               
+            </b>
+            Action Comics #1
+          </h5>
+        </div>
+        <div
+          className="MuiBox-root MuiBox-root-8"
+        >
+          <div
+            className="MuiChip-root makeStyles-chips-1 MuiChip-outlined"
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+          >
+            <div
+              className="MuiAvatar-root MuiAvatar-circle MuiChip-avatar MuiAvatar-colorDefault"
+            >
+              KE
+            </div>
+            <span
+              className="MuiChip-label"
+            >
+              Kal-El
+            </span>
+          </div>
+        </div>
+        <div
+          className="MuiBox-root MuiBox-root-9"
+        >
+          <hr
+            className="MuiDivider-root"
+          />
+        </div>
+        <div
+          className="MuiBox-root MuiBox-root-10"
+        >
+          <button
+            className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary"
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={0}
+            type="button"
+          >
+            <span
+              className="MuiButton-label"
+            >
+              <span
+                className="MuiButton-startIcon MuiButton-iconSizeMedium"
+              >
+                <svg
+                  aria-hidden={true}
+                  className="MuiSvgIcon-root"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M11.67 3.87L9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"
+                  />
+                </svg>
+              </span>
+              regresar
+            </span>
+            <span
+              className="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
