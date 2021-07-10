@@ -73,6 +73,17 @@ export const SearchPage = ({ history }) => {
                     </Box>
                 </Fade>
             )}
+            {q.length && heros.length === 0 ? (
+                <Fade in timeout={500}>
+                    <Box mt={2}>
+                        <Typography variant="h5" color="error">
+                            No se encontraron coincidencias...
+                        </Typography>
+                    </Box>
+                </Fade>
+            ) : (
+                <></>
+            )}
         </Box>
     );
 };

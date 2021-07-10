@@ -6,5 +6,5 @@ try {
     loginImage = require.context('../assets');
 } catch (err) { }
 
-export const getHeroImage = image => (heroImages(`./${image}`).default);
-export const getLoginImage = () => (loginImage(`./login.png`).default);
+export const getHeroImage = image => (heroImages(`./${image}`).default || '.');
+export const getLoginImage = () => (loginImage(`./login.png`).default || '.');
